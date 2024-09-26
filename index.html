@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wold clock</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data.js"></script>
   </head>
   <body>
     <div class="container">
@@ -20,22 +22,22 @@
       </div>
       <div class="city-detail">
         <div class="city-name">
-          <h2>Sydney</h2>
-          <p>Australia</p>
+          <h2 id="city1"></h2>
+          <p id="country1"></p>
         </div>
         <div class="city-time">
-          <h2>1:45:18 AM</h2>
-          <p>August 12, 2024</p>
+          <h2 id="city1-time"></h2>
+          <p id="city1-date"></p>
         </div>
       </div>
       <div class="city-detail">
         <div class="city-name">
-          <h2>Tokyo</h2>
-          <p>Japan</p>
+          <h2 id="city2"></h2>
+          <p id="country2"></p>
         </div>
         <div class="city-time">
-          <h2>1:45:18 AM</h2>
-          <p>August 12, 2024</p>
+          <h2 id="city2-time"></h2>
+          <p id="city2-date"></p>
         </div>
       </div>
     </div>
