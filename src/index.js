@@ -1,5 +1,9 @@
 function displayCityDetail(event) {
   let cityTimeZone = event.target.value;
+
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let dateDisplay = moment().tz(cityTimeZone).format("MMMM D, YYYY");
   let timeDisplay = moment().tz(cityTimeZone).format("H:mm:ss A");
 
@@ -12,7 +16,6 @@ function displayCityDetail(event) {
   } else if (cityName === "London") {
     countryName = "United Kingdom";
   } else if (cityName === "Kolkata") {
-    cityName = "Mumbai";
     countryName = "India";
   } else if (cityName === "New York") {
     countryName = "USA";
